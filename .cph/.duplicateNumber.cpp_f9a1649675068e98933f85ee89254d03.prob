@@ -1,1 +1,0 @@
-{"name":"Local: duplicateNumber","url":"r:\\Interview Preparation\\duplicateNumber.cpp","tests":[{"id":1624081393837,"input":"6\n1 2 3 2 3 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"r:\\Interview Preparation\\duplicateNumber.cpp","group":"local","local":true}
