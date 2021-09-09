@@ -1,18 +1,20 @@
 package DataStructures1;
 
 import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
 public class DS4_Queues {
     public static void main(String[] args) {
-//        Queue<Integer> q = new ArrayDeque<>();
-//        q.add(10);
-//        q.add(20);
-//        System.out.println(q);
-//        reverse(q);
-//        System.out.println(q);
+        Queue<Integer> q1 = new LinkedList<>();
+        q1.add(10);
+        q1.add(20);
+        q1.add(30);
+        q1.add(40);
+        q1.add(50);
+
         DataStructures1.Queue q = new DataStructures1.Queue(5);
         q.enqueue(10);
         q.enqueue(20);
@@ -35,6 +37,8 @@ public class DS4_Queues {
         pq.add(22);
         pq.add(30);
         System.out.println(pq);
+
+        q.kthReverse(q1,3);
 
     }
 

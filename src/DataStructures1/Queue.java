@@ -1,5 +1,7 @@
 package DataStructures1;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Stack;
 
 public class Queue {
     private int front ;
@@ -30,6 +32,32 @@ public class Queue {
         front = (front + 1) % items.length;
         count--;
         return item;
+    }
+
+    public void kthReverse(java.util.Queue<Integer> qs, int k)
+    {
+        System.out.println(qs);
+        Stack<Integer> s = new Stack<>();
+        int t = k;
+        while(t>0)
+        {
+            s.push(qs.peek());
+            qs.remove();
+            t--;
+        }
+        while(!s.empty())
+        {
+            qs.add(s.peek());
+            s.pop();
+        }
+
+        for(int i =0;i<qs.size()-k;i++)
+        {
+            qs.add(qs.peek());
+            qs.remove();
+        }
+
+        System.out.println(qs);
     }
 
     @Override
