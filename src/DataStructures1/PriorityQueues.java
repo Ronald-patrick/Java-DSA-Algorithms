@@ -1,8 +1,10 @@
 package DataStructures1;
 
+import java.util.Arrays;
+
 public class PriorityQueues {
     private int items[];
-    private int count;
+    private int count=-1;
 
     PriorityQueues(int size)
     {
@@ -24,5 +26,12 @@ public class PriorityQueues {
         items[i+1] = item;
         count++;
     }
+
+    @Override
+    public String toString()
+    {
+        return Arrays.toString(items);
+    }
+
 
 }

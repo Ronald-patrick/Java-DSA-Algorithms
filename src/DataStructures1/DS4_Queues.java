@@ -30,7 +30,7 @@ public class DS4_Queues {
         q2.enqueue(20);
         System.out.println(q2);
 
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        PriorityQueues pq = new PriorityQueues(5);
         pq.add(20);
         pq.add(22);
         pq.add(30);
